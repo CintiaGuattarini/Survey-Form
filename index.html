@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mirza&family=Rajdhani:wght@300;600&family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1 id="title">Los luagres más lindos de Argentina</h1>
+    <p id="description">Completa el Formulario </p>
+
+    <form id="survey-form" action="" required >
+      <label id="name-label" for="name">   Nombre</label>
+      <input
+        id="name"
+        type="text"
+        name="nombre"
+        placeholder="
+        Introduzca su nombre"
+        required
+      />
+      
+
+      <label for="email-label" id="email-label">   Mail</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="
+        Introduzca su mail"
+        required
+      />
+      
+
+      <label for="number-label"id="number-label">   Edad</label>
+      <input
+        id="number"
+        type="number"
+        name="number"
+        placeholder="   123"
+        required
+        min="10"
+        max="99"
+      />
+
+    
+
+      <!--<label id="Nacionalidad-label" for="nacionalidad">Nacionalidad</label>
+      <input
+        id="nacionalidad"
+        type="text"
+        name="Nacionalidad"
+        placeholder="Introduzca su nacionalidad"
+        required
+      />
+      <br /><br />-->
+      <br>
+
+
+      <select id="provincia">
+        <option disabled="" selected="" value="" id="">
+          
+          Selecciona la Provincia en la que vives
+        </option>
+        <option value="Buenos Aires">Buenos Aires</option>
+        <option value="Ciudad Autónoma de Buenos Aires">
+          Ciudad Autónoma de Buenos Aires
+        </option>
+        <option value="Catamarca">Catamarca</option>
+        <option value="Chaco">Chaco</option>
+        <option value="Chubut">Chubut</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Corrientes">Corrientes</option>
+        <option value="Entre Ríos">Entre Ríos</option>
+        <option value="Formosa">Formosa</option>
+        <option value="Jujuy">Jujuy</option>
+        <option value="La Pampa">La Pampa</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Mendoza">Mendoza</option>
+        <option value="Misiones">Misiones</option>
+        <option value="Neuquén">Neuquén</option>
+        <option value="Río Negro">Río Negro</option>
+        <option value="Salta">Salta</option>
+        <option value="San Juan">San Juan</option>
+        <option value="San Luis">San Luis</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Santa Fe">Santa Fe</option>
+        <option value="Santiago del Estero">Santiago del Estero</option>
+        <option value="Tierra del Fuego">Tierra del Fuego</option>
+        <option value="Antártida e Islas del Atlántico Sur">
+          Antártida e Islas del Atlántico Sur
+        </option>
+        <option value="Tucumán">Tucumán</option>
+      </select>
+      
+
+      <p>¿Qué lugar turístico te gustaria conocer?</p>
+      <div id="lugares">
+<label for="">
+        <input type="checkbox" value="Bariloche; Río Negro" class="input-checkbox" name="prefer"
+      />Bariloche; Río Negro</label>
+<label for="">
+        <input type="checkbox" value="Carlos Paz; Córdoba" class="input-checkbox" name="prefer"
+      />Carlos Paz; Córdoba</label>
+<label for="">
+        <input type="checkbox" value="Villa Gesell; Provincia de Buenos Aires" class="input-checkbox" name="prefer"
+      />Villa Gesell; Provincia de Buenos Aires</label>
+<label for="">
+        <input type="checkbox" value="Partido de la Costa; Provincia de Buenos Aires" class="input-checkbox" name="prefer"
+      />Partido de la Costa; Provincia de Buenos Aires</label>
+<label for="">
+        <input type="checkbox" value="Termas de Río Hondo; Santiago del Estero" class="input-checkbox" name="prefer"
+      />Termas de Río Hondo; Santiago del Estero</label>
+<label for="">
+        <input type="checkbox" value="Salta; Provincia de Salta" class="input-checkbox" name="prefer"
+      />Salta; Provincia de Salta</label>
+<label for="">
+        <input type="checkbox" value="Mendoza; Provincia de Mendoza" class="input-checkbox" name="prefer"
+      />Mendoza; Provincia de Mendoza</label>
+<label for="">
+        <input type="checkbox" value="Iguazú, Misiones" class="input-checkbox" name="prefer"
+      />Iguazú, Misiones</label>
+<label for="">
+        <input type="checkbox" value="Córdoba; Provincia de Córdoba" class="input-checkbox" name="prefer"
+      />Córdoba; Provincia de Córdoba</label>
+<label for="">
+        <input type="checkbox" value="Pinamar; Provincia de Buenos Aires" class="input-checkbox" name="prefer"
+      />Pinamar; Provincia de Buenos Aires</label>
+<label for="">
+        <input type="checkbox" value="Rosario; Santa Fe" class="input-checkbox" name="prefer"
+      />Rosario; Santa Fe</label>
+       <label for="">
+        <input type="checkbox" value="Merlo; San Luis" class="input-checkbox" name="prefer"
+      />Merlo; San Luis</label>
+<label for="">
+        <input type="checkbox" value="Colón; Provincia de Entre Ríos" class="input-checkbox" name="prefer"
+      />Colón; Provincia de Entre Ríos</label>
+<label for="">
+        <input type="checkbox" value="El Calafate, Santa Cruz" class="input-checkbox" name="prefer"
+      />El Calafate, Santa Cruz</label>
+<label for="">
+        <input type="checkbox" value="Puerto Madryn; Chubut" class="input-checkbox" name="prefer"
+      />Puerto Madryn; Chubut</label>
+<label for="">
+        <input type="checkbox" value="Tandil; Provincia de Buenos Aires" class="input-checkbox" name="prefer"
+      />Tandil; Provincia de Buenos Aires</label>
+<label for="">
+        <input type="checkbox" value="Ushuaia; Tierra del Fuego" class="input-checkbox" name="prefer"
+      />Ushuaia; Tierra del Fuego</label>
+<label for="">
+        <input type="checkbox" value="Quebrada de Humahuaca, Jujuy" class="input-checkbox" name="prefer"
+      />Quebrada de Humahuaca, Jujuy</label>
+      <label for="">
+        <input type="checkbox" value="San Rafael, Mendoza" class="input-checkbox" name="prefer"
+      />San Rafael, Mendoza</label>
+      <label for="">
+        <input type="checkbox" value="San Miguel de Tucumán" class="input-checkbox" name="prefer"
+      />San Miguel de Tucumán</label>
+<label for="">
+        <input type="checkbox" value="Federación, Entre Ríos" class="input-checkbox" name="prefer"
+      />Federación, Entre Ríos</label>
+      <label for="">
+        <input type="checkbox" value="San Martín de los Andes, Neuquén" class="input-checkbox" name="prefer"
+      />San Martín de los Andes, Neuquén</label>
+    </div>
+
+    <div class="estaciones">
+      <br>
+      <p>¿En qué estación del año?</p>
+        <input class="input-radio" name="provisorio" value="provisorio1" type="radio" checked="">Verano
+        <input class="input-radio" name="provisorio" value="provisorio2" type="radio" checked="">Otoño
+        <input class="input-radio" name="provisorio" value="provisorio3" type="radio" checked="">Invierno
+        <input class="input-radio" name="provisorio" value="provisorio4" type="radio" checked="">Primavera
+        </div>
+
+        <textarea name="" id="textarea" cols="20" rows="4">     Deja un comentario si hay algún lugar que no hemos nombrado</textarea>
+        <button type="submit" id="submit">Enviar</button>
+
+
+
+    </form>
+  </body>
+</html>
+
+
